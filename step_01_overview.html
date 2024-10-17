@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            white-space: nowrap;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media screen and (max-width: 600px) {
+            table {
+                font-size: 14px;
+            }
+            th, td {
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <table style="width:100%;">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 7%" />
+<col style="width: 12%" />
+<col style="width: 18%" />
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Curve Name</th>
+<th>Sketch</th>
+<th>Convex Hull</th>
+<th>Convex Hull Normal</th>
+<th>Vertices Normal</th>
+<th>Parallel Transport</th>
+<th>Optimized Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>author1_building</td>
+<td><img src="figs_normal/3d_sketch/author1_building.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/author1_building.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/author1_building.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/author1_building.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/author1_building.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/author1_building.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>author1_bulbasaur</td>
+<td><img src="figs_normal/3d_sketch/author1_bulbasaur.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/author1_bulbasaur.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/author1_bulbasaur.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/author1_bulbasaur.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/author1_bulbasaur.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/author1_bulbasaur.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>author1_bust</td>
+<td><img src="figs_normal/3d_sketch/author1_bust.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/author1_bust.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/author1_bust.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/author1_bust.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/author1_bust.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/author1_bust.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>author1_car</td>
+<td><img src="figs_normal/3d_sketch/author1_car.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/author1_car.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/author1_car.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/author1_car.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/author1_car.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/author1_car.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>author1_chair</td>
+<td><img src="figs_normal/3d_sketch/author1_chair.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/author1_chair.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/author1_chair.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/author1_chair.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/author1_chair.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/author1_chair.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>author1_chair_ff</td>
+<td><img src="figs_normal/3d_sketch/author1_chair_ff.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/author1_chair_ff.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/author1_chair_ff.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/author1_chair_ff.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/author1_chair_ff.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/author1_chair_ff.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>author1_ship</td>
+<td><img src="figs_normal/3d_sketch/author1_ship.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/author1_ship.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/author1_ship.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/author1_ship.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/author1_ship.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/author1_ship.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>author2_gamepad</td>
+<td><img src="figs_normal/3d_sketch/author2_gamepad.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/author2_gamepad.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/author2_gamepad.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/author2_gamepad.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/author2_gamepad.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/author2_gamepad.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>author2_guitar</td>
+<td><img src="figs_normal/3d_sketch/author2_guitar.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/author2_guitar.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/author2_guitar.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/author2_guitar.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/author2_guitar.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/author2_guitar.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>author2_sofa</td>
+<td><img src="figs_normal/3d_sketch/author2_sofa.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/author2_sofa.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/author2_sofa.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/author2_sofa.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/author2_sofa.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/author2_sofa.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>cassie_car</td>
+<td><img src="figs_normal/3d_sketch/cassie_car.png" alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/cassie_car.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/cassie_car.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/cassie_car.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/cassie_car.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/cassie_car.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>cassie_chair</td>
+<td><img src="figs_normal/3d_sketch/cassie_chair.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/cassie_chair.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/cassie_chair.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/cassie_chair.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/cassie_chair.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/cassie_chair.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>cassie_computer-mouse</td>
+<td><img src="figs_normal/3d_sketch/cassie_computer-mouse.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/cassie_computer-mouse.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/cassie_computer-mouse.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/cassie_computer-mouse.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/cassie_computer-mouse.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/cassie_computer-mouse.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>cassie_hat</td>
+<td><img src="figs_normal/3d_sketch/cassie_hat.png" alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/cassie_hat.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/cassie_hat.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/cassie_hat.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/cassie_hat.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/cassie_hat.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>cassie_p9_lamp</td>
+<td><img src="figs_normal/3d_sketch/cassie_p9_lamp.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/cassie_p9_lamp.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/cassie_p9_lamp.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/cassie_p9_lamp.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/cassie_p9_lamp.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/cassie_p9_lamp.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>cassie_p9_shoe</td>
+<td><img src="figs_normal/3d_sketch/cassie_p9_shoe.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/cassie_p9_shoe.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/cassie_p9_shoe.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/cassie_p9_shoe.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/cassie_p9_shoe.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/cassie_p9_shoe.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>cassie_p11_lamp</td>
+<td><img src="figs_normal/3d_sketch/cassie_p11_lamp.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/cassie_p11_lamp.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/cassie_p11_lamp.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/cassie_p11_lamp.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/cassie_p11_lamp.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/cassie_p11_lamp.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>cassie_p11_shoe</td>
+<td><img src="figs_normal/3d_sketch/cassie_p11_shoe.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/cassie_p11_shoe.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/cassie_p11_shoe.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/cassie_p11_shoe.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/cassie_p11_shoe.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/cassie_p11_shoe.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>cassie_p12_lamp</td>
+<td><img src="figs_normal/3d_sketch/cassie_p12_lamp.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/cassie_p12_lamp.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/cassie_p12_lamp.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/cassie_p12_lamp.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/cassie_p12_lamp.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/cassie_p12_lamp.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>cassie_p12_shoe</td>
+<td><img src="figs_normal/3d_sketch/cassie_p12_shoe.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/cassie_p12_shoe.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/cassie_p12_shoe.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/cassie_p12_shoe.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/cassie_p12_shoe.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/cassie_p12_shoe.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>cassie_sewing-machine</td>
+<td><img src="figs_normal/3d_sketch/cassie_sewing-machine.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/cassie_sewing-machine.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/cassie_sewing-machine.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/cassie_sewing-machine.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/cassie_sewing-machine.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/cassie_sewing-machine.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>cassie_teapot</td>
+<td><img src="figs_normal/3d_sketch/cassie_teapot.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/cassie_teapot.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/cassie_teapot.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/cassie_teapot.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/cassie_teapot.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/cassie_teapot.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>cassie_vacuum</td>
+<td><img src="figs_normal/3d_sketch/cassie_vacuum.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/cassie_vacuum.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/cassie_vacuum.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/cassie_vacuum.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/cassie_vacuum.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/cassie_vacuum.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>curvefusion_bust</td>
+<td><img src="figs_normal/3d_sketch/curvefusion_bust.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/curvefusion_bust.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/curvefusion_bust.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/curvefusion_bust.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/curvefusion_bust.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/curvefusion_bust.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>flowrep_bathtub</td>
+<td><img src="figs_normal/3d_sketch/flowrep_bathtub.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/flowrep_bathtub.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/flowrep_bathtub.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/flowrep_bathtub.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/flowrep_bathtub.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/flowrep_bathtub.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>flowrep_boat</td>
+<td><img src="figs_normal/3d_sketch/flowrep_boat.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/flowrep_boat.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/flowrep_boat.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/flowrep_boat.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/flowrep_boat.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/flowrep_boat.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>flowrep_bottle</td>
+<td><img src="figs_normal/3d_sketch/flowrep_bottle.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/flowrep_bottle.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/flowrep_bottle.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/flowrep_bottle.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/flowrep_bottle.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/flowrep_bottle.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>flowrep_ellipsetorus</td>
+<td><img src="figs_normal/3d_sketch/flowrep_ellipsetorus.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/flowrep_ellipsetorus.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/flowrep_ellipsetorus.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/flowrep_ellipsetorus.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/flowrep_ellipsetorus.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/flowrep_ellipsetorus.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>flowrep_mouse</td>
+<td><img src="figs_normal/3d_sketch/flowrep_mouse.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/flowrep_mouse.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/flowrep_mouse.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/flowrep_mouse.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/flowrep_mouse.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/flowrep_mouse.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>flowrep_phone</td>
+<td><img src="figs_normal/3d_sketch/flowrep_phone.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/flowrep_phone.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/flowrep_phone.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/flowrep_phone.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/flowrep_phone.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/flowrep_phone.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>flowrep_spherecylinder</td>
+<td><img src="figs_normal/3d_sketch/flowrep_spherecylinder.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/flowrep_spherecylinder.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/flowrep_spherecylinder.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/flowrep_spherecylinder.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/flowrep_spherecylinder.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/flowrep_spherecylinder.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>flowrep_trebol</td>
+<td><img src="figs_normal/3d_sketch/flowrep_trebol.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/flowrep_trebol.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/flowrep_trebol.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/flowrep_trebol.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/flowrep_trebol.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/flowrep_trebol.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>flowsurf_beetle</td>
+<td><img src="figs_normal/3d_sketch/flowsurf_beetle.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/flowsurf_beetle.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/flowsurf_beetle.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/flowsurf_beetle.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/flowsurf_beetle.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/flowsurf_beetle.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>flowsurf_expresso</td>
+<td><img src="figs_normal/3d_sketch/flowsurf_expresso.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/flowsurf_expresso.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/flowsurf_expresso.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/flowsurf_expresso.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/flowsurf_expresso.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/flowsurf_expresso.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>ils_boat</td>
+<td><img src="figs_normal/3d_sketch/ils_boat.png" alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/ils_boat.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/ils_boat.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/ils_boat.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/ils_boat.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/ils_boat.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>ils_car1</td>
+<td><img src="figs_normal/3d_sketch/ils_car1.png" alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/ils_car1.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/ils_car1.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/ils_car1.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/ils_car1.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/ils_car1.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>ils_car2</td>
+<td><img src="figs_normal/3d_sketch/ils_car2.png" alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/ils_car2.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/ils_car2.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/ils_car2.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/ils_car2.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/ils_car2.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>ils_car3</td>
+<td><img src="figs_normal/3d_sketch/ils_car3.png" alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/ils_car3.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/ils_car3.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/ils_car3.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/ils_car3.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/ils_car3.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>ils_car4</td>
+<td><img src="figs_normal/3d_sketch/ils_car4.png" alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/ils_car4.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/ils_car4.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/ils_car4.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/ils_car4.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/ils_car4.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>ils_car5</td>
+<td><img src="figs_normal/3d_sketch/ils_car5.png" alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/ils_car5.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/ils_car5.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/ils_car5.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/ils_car5.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/ils_car5.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>ils_roadster</td>
+<td><img src="figs_normal/3d_sketch/ils_roadster.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/ils_roadster.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/ils_roadster.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/ils_roadster.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/ils_roadster.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/ils_roadster.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>ils_spacecraft_29</td>
+<td><img src="figs_normal/3d_sketch/ils_spacecraft_29.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/ils_spacecraft_29.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/ils_spacecraft_29.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/ils_spacecraft_29.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/ils_spacecraft_29.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/ils_spacecraft_29.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>ils_spacecraft_78</td>
+<td><img src="figs_normal/3d_sketch/ils_spacecraft_78.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/ils_spacecraft_78.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/ils_spacecraft_78.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/ils_spacecraft_78.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/ils_spacecraft_78.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/ils_spacecraft_78.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>ils_speaker</td>
+<td><img src="figs_normal/3d_sketch/ils_speaker.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/ils_speaker.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/ils_speaker.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/ils_speaker.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/ils_speaker.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/ils_speaker.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>onshape_bishop</td>
+<td><img src="figs_normal/3d_sketch/onshape_bishop.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/onshape_bishop.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/onshape_bishop.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/onshape_bishop.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/onshape_bishop.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/onshape_bishop.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>onshape_boat</td>
+<td><img src="figs_normal/3d_sketch/onshape_boat.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/onshape_boat.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/onshape_boat.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/onshape_boat.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/onshape_boat.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/onshape_boat.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>onshape_guitar</td>
+<td><img src="figs_normal/3d_sketch/onshape_guitar.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/onshape_guitar.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/onshape_guitar.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/onshape_guitar.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/onshape_guitar.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/onshape_guitar.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>onshape_house</td>
+<td><img src="figs_normal/3d_sketch/onshape_house.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/onshape_house.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/onshape_house.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/onshape_house.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/onshape_house.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/onshape_house.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>onshape_iron</td>
+<td><img src="figs_normal/3d_sketch/onshape_iron.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/onshape_iron.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/onshape_iron.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/onshape_iron.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/onshape_iron.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/onshape_iron.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>onshape_simple_mouse</td>
+<td><img src="figs_normal/3d_sketch/onshape_simple_mouse.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/onshape_simple_mouse.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/onshape_simple_mouse.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/onshape_simple_mouse.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/onshape_simple_mouse.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/onshape_simple_mouse.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>onshape_simple_shape</td>
+<td><img src="figs_normal/3d_sketch/onshape_simple_shape.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/onshape_simple_shape.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/onshape_simple_shape.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/onshape_simple_shape.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/onshape_simple_shape.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/onshape_simple_shape.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>onshape_vacuum</td>
+<td><img src="figs_normal/3d_sketch/onshape_vacuum.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/onshape_vacuum.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/onshape_vacuum.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/onshape_vacuum.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/onshape_vacuum.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/onshape_vacuum.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>penzil_spaceship</td>
+<td><img src="figs_normal/3d_sketch/penzil_spaceship.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/penzil_spaceship.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/penzil_spaceship.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/penzil_spaceship.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/penzil_spaceship.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/penzil_spaceship.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>robbins_car1</td>
+<td><img src="figs_normal/3d_sketch/robbins_car1.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/robbins_car1.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/robbins_car1.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/robbins_car1.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/robbins_car1.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/robbins_car1.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>robbins_car2</td>
+<td><img src="figs_normal/3d_sketch/robbins_car2.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/robbins_car2.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/robbins_car2.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/robbins_car2.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/robbins_car2.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/robbins_car2.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>robbins_spaceship</td>
+<td><img src="figs_normal/3d_sketch/robbins_spaceship.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/robbins_spaceship.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/robbins_spaceship.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/robbins_spaceship.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/robbins_spaceship.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/robbins_spaceship.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>scaffold_sketch_P1_trash.json</td>
+<td><img src="figs_normal/3d_sketch/scaffold_sketch_P1_trash.json.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/scaffold_sketch_P1_trash.json.png"
+alt="Convex Hull" /></td>
+<td><img
+src="figs_normal/convex_hull_normal/scaffold_sketch_P1_trash.json.png"
+alt="Convex Hull Normal" /></td>
+<td><img
+src="figs_normal/vertices_normal/scaffold_sketch_P1_trash.json.png"
+alt="Vertices Normal" /></td>
+<td><img
+src="figs_normal/parallel_transport/scaffold_sketch_P1_trash.json.png"
+alt="Parallel Transport" /></td>
+<td><img
+src="figs_normal/optimized_result/scaffold_sketch_P1_trash.json.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>scaffold_sketch_P2_open</td>
+<td><img src="figs_normal/3d_sketch/scaffold_sketch_P2_open.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/scaffold_sketch_P2_open.png"
+alt="Convex Hull" /></td>
+<td><img
+src="figs_normal/convex_hull_normal/scaffold_sketch_P2_open.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/scaffold_sketch_P2_open.png"
+alt="Vertices Normal" /></td>
+<td><img
+src="figs_normal/parallel_transport/scaffold_sketch_P2_open.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/scaffold_sketch_P2_open.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>scaffold_sketch_P2_trash</td>
+<td><img src="figs_normal/3d_sketch/scaffold_sketch_P2_trash.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/scaffold_sketch_P2_trash.png"
+alt="Convex Hull" /></td>
+<td><img
+src="figs_normal/convex_hull_normal/scaffold_sketch_P2_trash.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/scaffold_sketch_P2_trash.png"
+alt="Vertices Normal" /></td>
+<td><img
+src="figs_normal/parallel_transport/scaffold_sketch_P2_trash.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/scaffold_sketch_P2_trash.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>scaffold_sketch_P2_tutorial</td>
+<td><img src="figs_normal/3d_sketch/scaffold_sketch_P2_tutorial.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/scaffold_sketch_P2_tutorial.png"
+alt="Convex Hull" /></td>
+<td><img
+src="figs_normal/convex_hull_normal/scaffold_sketch_P2_tutorial.png"
+alt="Convex Hull Normal" /></td>
+<td><img
+src="figs_normal/vertices_normal/scaffold_sketch_P2_tutorial.png"
+alt="Vertices Normal" /></td>
+<td><img
+src="figs_normal/parallel_transport/scaffold_sketch_P2_tutorial.png"
+alt="Parallel Transport" /></td>
+<td><img
+src="figs_normal/optimized_result/scaffold_sketch_P2_tutorial.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>scaffold_sketch_P3_open</td>
+<td><img src="figs_normal/3d_sketch/scaffold_sketch_P3_open.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/scaffold_sketch_P3_open.png"
+alt="Convex Hull" /></td>
+<td><img
+src="figs_normal/convex_hull_normal/scaffold_sketch_P3_open.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/scaffold_sketch_P3_open.png"
+alt="Vertices Normal" /></td>
+<td><img
+src="figs_normal/parallel_transport/scaffold_sketch_P3_open.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/scaffold_sketch_P3_open.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>scaffold_sketch_P3_trash</td>
+<td><img src="figs_normal/3d_sketch/scaffold_sketch_P3_trash.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/scaffold_sketch_P3_trash.png"
+alt="Convex Hull" /></td>
+<td><img
+src="figs_normal/convex_hull_normal/scaffold_sketch_P3_trash.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/scaffold_sketch_P3_trash.png"
+alt="Vertices Normal" /></td>
+<td><img
+src="figs_normal/parallel_transport/scaffold_sketch_P3_trash.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/scaffold_sketch_P3_trash.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>scaffold_sketch_P4_open</td>
+<td><img src="figs_normal/3d_sketch/scaffold_sketch_P4_open.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/scaffold_sketch_P4_open.png"
+alt="Convex Hull" /></td>
+<td><img
+src="figs_normal/convex_hull_normal/scaffold_sketch_P4_open.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/scaffold_sketch_P4_open.png"
+alt="Vertices Normal" /></td>
+<td><img
+src="figs_normal/parallel_transport/scaffold_sketch_P4_open.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/scaffold_sketch_P4_open.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>scaffold_sketch_P4_trash</td>
+<td><img src="figs_normal/3d_sketch/scaffold_sketch_P4_trash.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/scaffold_sketch_P4_trash.png"
+alt="Convex Hull" /></td>
+<td><img
+src="figs_normal/convex_hull_normal/scaffold_sketch_P4_trash.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/scaffold_sketch_P4_trash.png"
+alt="Vertices Normal" /></td>
+<td><img
+src="figs_normal/parallel_transport/scaffold_sketch_P4_trash.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/scaffold_sketch_P4_trash.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>scaffold_sketch_P4_tutorial</td>
+<td><img src="figs_normal/3d_sketch/scaffold_sketch_P4_tutorial.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/scaffold_sketch_P4_tutorial.png"
+alt="Convex Hull" /></td>
+<td><img
+src="figs_normal/convex_hull_normal/scaffold_sketch_P4_tutorial.png"
+alt="Convex Hull Normal" /></td>
+<td><img
+src="figs_normal/vertices_normal/scaffold_sketch_P4_tutorial.png"
+alt="Vertices Normal" /></td>
+<td><img
+src="figs_normal/parallel_transport/scaffold_sketch_P4_tutorial.png"
+alt="Parallel Transport" /></td>
+<td><img
+src="figs_normal/optimized_result/scaffold_sketch_P4_tutorial.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>scaffold_sketch_P5_open</td>
+<td><img src="figs_normal/3d_sketch/scaffold_sketch_P5_open.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/scaffold_sketch_P5_open.png"
+alt="Convex Hull" /></td>
+<td><img
+src="figs_normal/convex_hull_normal/scaffold_sketch_P5_open.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/scaffold_sketch_P5_open.png"
+alt="Vertices Normal" /></td>
+<td><img
+src="figs_normal/parallel_transport/scaffold_sketch_P5_open.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/scaffold_sketch_P5_open.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>scaffold_sketch_P5_trash</td>
+<td><img src="figs_normal/3d_sketch/scaffold_sketch_P5_trash.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/scaffold_sketch_P5_trash.png"
+alt="Convex Hull" /></td>
+<td><img
+src="figs_normal/convex_hull_normal/scaffold_sketch_P5_trash.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/scaffold_sketch_P5_trash.png"
+alt="Vertices Normal" /></td>
+<td><img
+src="figs_normal/parallel_transport/scaffold_sketch_P5_trash.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/scaffold_sketch_P5_trash.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>scaffolds3d_dog</td>
+<td><img src="figs_normal/3d_sketch/scaffolds3d_dog.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/scaffolds3d_dog.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/scaffolds3d_dog.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/scaffolds3d_dog.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/scaffolds3d_dog.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/scaffolds3d_dog.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>scaffolds3d_submarine</td>
+<td><img src="figs_normal/3d_sketch/scaffolds3d_submarine.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/scaffolds3d_submarine.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/scaffolds3d_submarine.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/scaffolds3d_submarine.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/scaffolds3d_submarine.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/scaffolds3d_submarine.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>swh_dental_light</td>
+<td><img src="figs_normal/3d_sketch/swh_dental_light.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/swh_dental_light.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/swh_dental_light.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/swh_dental_light.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/swh_dental_light.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/swh_dental_light.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>t2f_blender</td>
+<td><img src="figs_normal/3d_sketch/t2f_blender.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/t2f_blender.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/t2f_blender.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/t2f_blender.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/t2f_blender.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/t2f_blender.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>t2f_box</td>
+<td><img src="figs_normal/3d_sketch/t2f_box.png" alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/t2f_box.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/t2f_box.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/t2f_box.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/t2f_box.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/t2f_box.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>t2f_car_93</td>
+<td><img src="figs_normal/3d_sketch/t2f_car_93.png" alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/t2f_car_93.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/t2f_car_93.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/t2f_car_93.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/t2f_car_93.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/t2f_car_93.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>t2f_car_97</td>
+<td><img src="figs_normal/3d_sketch/t2f_car_97.png" alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/t2f_car_97.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/t2f_car_97.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/t2f_car_97.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/t2f_car_97.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/t2f_car_97.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>t2f_fighter</td>
+<td><img src="figs_normal/3d_sketch/t2f_fighter.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/t2f_fighter.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/t2f_fighter.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/t2f_fighter.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/t2f_fighter.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/t2f_fighter.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>t2f_guitar</td>
+<td><img src="figs_normal/3d_sketch/t2f_guitar.png" alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/t2f_guitar.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/t2f_guitar.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/t2f_guitar.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/t2f_guitar.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/t2f_guitar.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>t2f_hand_vacuum</td>
+<td><img src="figs_normal/3d_sketch/t2f_hand_vacuum.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/t2f_hand_vacuum.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/t2f_hand_vacuum.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/t2f_hand_vacuum.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/t2f_hand_vacuum.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/t2f_hand_vacuum.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>t2f_iron</td>
+<td><img src="figs_normal/3d_sketch/t2f_iron.png" alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/t2f_iron.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/t2f_iron.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/t2f_iron.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/t2f_iron.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/t2f_iron.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>t2f_sewing_machine</td>
+<td><img src="figs_normal/3d_sketch/t2f_sewing_machine.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/t2f_sewing_machine.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/t2f_sewing_machine.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/t2f_sewing_machine.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/t2f_sewing_machine.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/t2f_sewing_machine.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>t2f_toothpaste</td>
+<td><img src="figs_normal/3d_sketch/t2f_toothpaste.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/t2f_toothpaste.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/t2f_toothpaste.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/t2f_toothpaste.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/t2f_toothpaste.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/t2f_toothpaste.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="odd">
+<td>t2f_vacuum</td>
+<td><img src="figs_normal/3d_sketch/t2f_vacuum.png" alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/t2f_vacuum.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/t2f_vacuum.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/t2f_vacuum.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/t2f_vacuum.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/t2f_vacuum.png"
+alt="Optimized Result" /></td>
+</tr>
+<tr class="even">
+<td>tolentino_shoe</td>
+<td><img src="figs_normal/3d_sketch/tolentino_shoe.png"
+alt="Sketch" /></td>
+<td><img src="figs_normal/convex_hull/tolentino_shoe.png"
+alt="Convex Hull" /></td>
+<td><img src="figs_normal/convex_hull_normal/tolentino_shoe.png"
+alt="Convex Hull Normal" /></td>
+<td><img src="figs_normal/vertices_normal/tolentino_shoe.png"
+alt="Vertices Normal" /></td>
+<td><img src="figs_normal/parallel_transport/tolentino_shoe.png"
+alt="Parallel Transport" /></td>
+<td><img src="figs_normal/optimized_result/tolentino_shoe.png"
+alt="Optimized Result" /></td>
+</tr>
+</tbody>
+</table>
+
+        </table>
+    </div>
+</body>
+</html>
