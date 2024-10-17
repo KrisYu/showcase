@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Comparison</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .image-name {
+            font-weight: bold;
+            width: 15%;
+        }
+        .image-cell {
+            width: 30%;
+        }
+        .explanation {
+            width: 25%;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Image Name</th>
+        <th>High Degree</th>
+        <th>Non-Planar Sketch</th>
+        <th>Explanation</th>
+    </tr>
+
+    <tr>
+        <td class="image-name">author1_bulbasaur</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/author1_bulbasaur.png" alt="High Degree"></td>
+        <td class="image-cell">Image not available</td>
+        <td class="explanation">This high valence is caused by the u-sharp curve, maybe because they are on the symmetry plane and draw by GravitySketch.</td>
+    </tr>
+
+    <tr>
+        <td class="image-name">curvefusion_bust</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/curvefusion_bust.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/curvefusion_bust.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">flowrep_boat</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/flowrep_boat.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/flowrep_boat.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">flowrep_bottle</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/flowrep_bottle.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/flowrep_bottle.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">flowrep_ellipsetorus</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/flowrep_ellipsetorus.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/flowrep_ellipsetorus.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">flowrep_mouse</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/flowrep_mouse.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/flowrep_mouse.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">flowrep_spherecylinder</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/flowrep_spherecylinder.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/flowrep_spherecylinder.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">flowsurf_beetle</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/flowsurf_beetle.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/flowsurf_beetle.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">flowsurf_expresso</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/flowsurf_expresso.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/flowsurf_expresso.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">ils_boat</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/ils_boat.png" alt="High Degree"></td>
+        <td class="image-cell">Image not available</td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">ils_car1</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/ils_car1.png" alt="High Degree"></td>
+        <td class="image-cell">Image not available</td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">ils_car3</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/ils_car3.png" alt="High Degree"></td>
+        <td class="image-cell">Image not available</td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">ils_car4</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/ils_car4.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/ils_car4.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">ils_car5</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/ils_car5.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/ils_car5.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">ils_roadster</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/ils_roadster.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/ils_roadster.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">ils_spacecraft_29</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/ils_spacecraft_29.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/ils_spacecraft_29.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">ils_spacecraft_78</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/ils_spacecraft_78.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/ils_spacecraft_78.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">ils_speaker</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/ils_speaker.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/ils_speaker.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">onshape_bishop</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/onshape_bishop.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/onshape_bishop.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">onshape_boat</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/onshape_boat.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/onshape_boat.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">onshape_guitar</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/onshape_guitar.png" alt="High Degree"></td>
+        <td class="image-cell">Image not available</td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">onshape_house</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/onshape_house.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/onshape_house.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">onshape_iron</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/onshape_iron.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/onshape_iron.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">onshape_simple_mouse</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/onshape_simple_mouse.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/onshape_simple_mouse.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">onshape_simple_shape</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/onshape_simple_shape.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/onshape_simple_shape.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">onshape_vacuum</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/onshape_vacuum.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/onshape_vacuum.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">robbins_car1</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/robbins_car1.png" alt="High Degree"></td>
+        <td class="image-cell">Image not available</td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">robbins_car2</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/robbins_car2.png" alt="High Degree"></td>
+        <td class="image-cell">Image not available</td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">robbins_spaceship</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/robbins_spaceship.png" alt="High Degree"></td>
+        <td class="image-cell">Image not available</td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">scaffold_sketch_P3_open</td>
+        <td class="image-cell">Image not available</td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/scaffold_sketch_P3_open.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">scaffolds3d_submarine</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/scaffolds3d_submarine.png" alt="High Degree"></td>
+        <td class="image-cell">Image not available</td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">swh_dental_light</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/swh_dental_light.png" alt="High Degree"></td>
+        <td class="image-cell">Image not available</td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">t2f_blender</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/t2f_blender.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/t2f_blender.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">t2f_box</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/t2f_box.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/t2f_box.png" alt="Non-Planar"></td>
+        <td class="explanation">This is the kind of non-planar/high valence curve I don't want.</td>
+    </tr>
+
+    <tr>
+        <td class="image-name">t2f_car_93</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/t2f_car_93.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/t2f_car_93.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">t2f_car_97</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/t2f_car_97.png" alt="High Degree"></td>
+        <td class="image-cell">Image not available</td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">t2f_fighter</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/t2f_fighter.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/t2f_fighter.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">t2f_guitar</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/t2f_guitar.png" alt="High Degree"></td>
+        <td class="image-cell">Image not available</td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">t2f_hand_vacuum</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/t2f_hand_vacuum.png" alt="High Degree"></td>
+        <td class="image-cell">Image not available</td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">t2f_iron</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/t2f_iron.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/t2f_iron.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">t2f_sewing_machine</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/t2f_sewing_machine.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/t2f_sewing_machine.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">t2f_toothpaste</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/t2f_toothpaste.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/t2f_toothpaste.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">t2f_vacuum</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/t2f_vacuum.png" alt="High Degree"></td>
+        <td class="image-cell"><img src="figs_normal/non_planar_sketch/t2f_vacuum.png" alt="Non-Planar"></td>
+        <td class="explanation"></td>
+    </tr>
+
+    <tr>
+        <td class="image-name">tolentino_shoe</td>
+        <td class="image-cell"><img src="figs_normal/high_degree/tolentino_shoe.png" alt="High Degree"></td>
+        <td class="image-cell">Image not available</td>
+        <td class="explanation"></td>
+    </tr>
+
+</table>
+</body>
+</html>
