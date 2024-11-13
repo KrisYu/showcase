@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Viewer</title>
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #333333;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 90%;  /* Increased from 1200px to 90% of viewport width */
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .models-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(300px, 1fr));  /* Added minmax for minimum width */
+            gap: 30px;  /* Increased gap between items */
+            margin-bottom: 40px;
+            width: 100%;  /* Ensure grid takes full width */
+        }
+        .model-group {
+            background: #444444;
+            padding: 20px;  /* Increased padding */
+            border-radius: 8px;
+            min-width: 300px;  /* Minimum width for each model */
+        }
+        .model-title {
+            text-align: center;
+            margin-bottom: 15px;  /* Increased margin */
+            color: #ffffff;
+            font-size: 1.2em;  /* Increased font size */
+        }
+        model-viewer {
+            width: 100%;
+            height: 400px;  /* Increased height */
+            background-color: #555555;
+            --poster-color: #555555;
+        }
+        .category-title {
+            color: #ffffff;
+            margin: 40px 0 30px 0;  /* Increased margins */
+            font-size: 1.8em;  /* Increased font size */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>3D Model Viewer</h1>
+        </div>
+        
+        <div class="category-title">Author2 Sofa</div>
+        <div class="models-grid">
+            <div class="model-group">
+                <h3 class="model-title">Sketches</h3>
+                <model-viewer src="gltfs/sketches/author2_sofa.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Convex Hull</h3>
+                <model-viewer src="gltfs/convex_hull/author2_sofa.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Edge Normals</h3>
+                <model-viewer src="gltfs/edge_normals/author2_sofa.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Opt Normals</h3>
+                <model-viewer src="gltfs/opt_normals/author2_sofa.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+        <div class="category-title">Flowrep Spherecylinder</div>
+        <div class="models-grid">
+            <div class="model-group">
+                <h3 class="model-title">Sketches</h3>
+                <model-viewer src="gltfs/sketches/flowrep_spherecylinder.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Convex Hull</h3>
+                <model-viewer src="gltfs/convex_hull/flowrep_spherecylinder.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Edge Normals</h3>
+                <model-viewer src="gltfs/edge_normals/flowrep_spherecylinder.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Opt Normals</h3>
+                <model-viewer src="gltfs/opt_normals/flowrep_spherecylinder.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+        <div class="category-title">Flowrep Trebol</div>
+        <div class="models-grid">
+            <div class="model-group">
+                <h3 class="model-title">Sketches</h3>
+                <model-viewer src="gltfs/sketches/flowrep_trebol.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Convex Hull</h3>
+                <model-viewer src="gltfs/convex_hull/flowrep_trebol.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Edge Normals</h3>
+                <model-viewer src="gltfs/edge_normals/flowrep_trebol.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Opt Normals</h3>
+                <model-viewer src="gltfs/opt_normals/flowrep_trebol.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+        <div class="category-title">Onshape Bishop</div>
+        <div class="models-grid">
+            <div class="model-group">
+                <h3 class="model-title">Sketches</h3>
+                <model-viewer src="gltfs/sketches/onshape_bishop.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Convex Hull</h3>
+                <model-viewer src="gltfs/convex_hull/onshape_bishop.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Edge Normals</h3>
+                <model-viewer src="gltfs/edge_normals/onshape_bishop.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Opt Normals</h3>
+                <model-viewer src="gltfs/opt_normals/onshape_bishop.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+        <div class="category-title">Onshape Simple Mouse</div>
+        <div class="models-grid">
+            <div class="model-group">
+                <h3 class="model-title">Sketches</h3>
+                <model-viewer src="gltfs/sketches/onshape_simple_mouse.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Convex Hull</h3>
+                <model-viewer src="gltfs/convex_hull/onshape_simple_mouse.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Edge Normals</h3>
+                <model-viewer src="gltfs/edge_normals/onshape_simple_mouse.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Opt Normals</h3>
+                <model-viewer src="gltfs/opt_normals/onshape_simple_mouse.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+        <div class="category-title">Onshape Simple Shape</div>
+        <div class="models-grid">
+            <div class="model-group">
+                <h3 class="model-title">Sketches</h3>
+                <model-viewer src="gltfs/sketches/onshape_simple_shape.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Convex Hull</h3>
+                <model-viewer src="gltfs/convex_hull/onshape_simple_shape.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Edge Normals</h3>
+                <model-viewer src="gltfs/edge_normals/onshape_simple_shape.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Opt Normals</h3>
+                <model-viewer src="gltfs/opt_normals/onshape_simple_shape.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
