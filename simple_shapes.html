@@ -8,15 +8,17 @@
     <style>
         body {
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #333333;
             color: white;
             font-family: Arial, sans-serif;
+            width: 100vw;
+            overflow-x: hidden;
         }
         .container {
-            max-width: 90%;  /* Increased from 1200px to 90% of viewport width */
+            width: 90%;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 20px 0;
         }
         .header {
             text-align: center;
@@ -24,33 +26,32 @@
         }
         .models-grid {
             display: grid;
-            grid-template-columns: repeat(4, minmax(300px, 1fr));  /* Added minmax for minimum width */
-            gap: 30px;  /* Increased gap between items */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
             margin-bottom: 40px;
-            width: 100%;  /* Ensure grid takes full width */
         }
         .model-group {
             background: #444444;
-            padding: 20px;  /* Increased padding */
+            padding: 15px;
             border-radius: 8px;
-            min-width: 300px;  /* Minimum width for each model */
         }
         .model-title {
             text-align: center;
-            margin-bottom: 15px;  /* Increased margin */
+            margin-bottom: 15px;
             color: #ffffff;
-            font-size: 1.2em;  /* Increased font size */
+            font-size: 1.2em;
         }
         model-viewer {
             width: 100%;
-            height: 400px;  /* Increased height */
+            height: 400px;
             background-color: #555555;
             --poster-color: #555555;
         }
         .category-title {
             color: #ffffff;
-            margin: 40px 0 30px 0;  /* Increased margins */
-            font-size: 1.8em;  /* Increased font size */
+            margin: 40px 0 30px 0;
+            font-size: 1.8em;
             text-align: center;
         }
     </style>
@@ -88,8 +89,32 @@
                 </model-viewer>
             </div>
             <div class="model-group">
+                <h3 class="model-title">Initial Parallel Transport</h3>
+                <model-viewer src="gltfs/initial_parallel_transport/author2_sofa.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Initial Estimate</h3>
+                <model-viewer src="gltfs/initial_estimate/author2_sofa.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
                 <h3 class="model-title">Opt Normals</h3>
                 <model-viewer src="gltfs/opt_normals/author2_sofa.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Opt Small Data Term</h3>
+                <model-viewer src="gltfs/opt_small_data_term/author2_sofa.gltf"
                     camera-controls
                     auto-rotate
                     shadow-intensity="1">
@@ -123,8 +148,32 @@
                 </model-viewer>
             </div>
             <div class="model-group">
+                <h3 class="model-title">Initial Parallel Transport</h3>
+                <model-viewer src="gltfs/initial_parallel_transport/flowrep_spherecylinder.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Initial Estimate</h3>
+                <model-viewer src="gltfs/initial_estimate/flowrep_spherecylinder.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
                 <h3 class="model-title">Opt Normals</h3>
                 <model-viewer src="gltfs/opt_normals/flowrep_spherecylinder.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Opt Small Data Term</h3>
+                <model-viewer src="gltfs/opt_small_data_term/flowrep_spherecylinder.gltf"
                     camera-controls
                     auto-rotate
                     shadow-intensity="1">
@@ -158,6 +207,22 @@
                 </model-viewer>
             </div>
             <div class="model-group">
+                <h3 class="model-title">Initial Parallel Transport</h3>
+                <model-viewer src="gltfs/initial_parallel_transport/flowrep_trebol.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Initial Estimate</h3>
+                <model-viewer src="gltfs/initial_estimate/flowrep_trebol.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
                 <h3 class="model-title">Opt Normals</h3>
                 <model-viewer src="gltfs/opt_normals/flowrep_trebol.gltf"
                     camera-controls
@@ -165,36 +230,9 @@
                     shadow-intensity="1">
                 </model-viewer>
             </div>
-        </div>
-        <div class="category-title">Onshape Bishop</div>
-        <div class="models-grid">
             <div class="model-group">
-                <h3 class="model-title">Sketches</h3>
-                <model-viewer src="gltfs/sketches/onshape_bishop.gltf"
-                    camera-controls
-                    auto-rotate
-                    shadow-intensity="1">
-                </model-viewer>
-            </div>
-            <div class="model-group">
-                <h3 class="model-title">Convex Hull</h3>
-                <model-viewer src="gltfs/convex_hull/onshape_bishop.gltf"
-                    camera-controls
-                    auto-rotate
-                    shadow-intensity="1">
-                </model-viewer>
-            </div>
-            <div class="model-group">
-                <h3 class="model-title">Edge Normals</h3>
-                <model-viewer src="gltfs/edge_normals/onshape_bishop.gltf"
-                    camera-controls
-                    auto-rotate
-                    shadow-intensity="1">
-                </model-viewer>
-            </div>
-            <div class="model-group">
-                <h3 class="model-title">Opt Normals</h3>
-                <model-viewer src="gltfs/opt_normals/onshape_bishop.gltf"
+                <h3 class="model-title">Opt Small Data Term</h3>
+                <model-viewer src="gltfs/opt_small_data_term/flowrep_trebol.gltf"
                     camera-controls
                     auto-rotate
                     shadow-intensity="1">
@@ -228,8 +266,32 @@
                 </model-viewer>
             </div>
             <div class="model-group">
+                <h3 class="model-title">Initial Parallel Transport</h3>
+                <model-viewer src="gltfs/initial_parallel_transport/onshape_simple_mouse.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Initial Estimate</h3>
+                <model-viewer src="gltfs/initial_estimate/onshape_simple_mouse.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
                 <h3 class="model-title">Opt Normals</h3>
                 <model-viewer src="gltfs/opt_normals/onshape_simple_mouse.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Opt Small Data Term</h3>
+                <model-viewer src="gltfs/opt_small_data_term/onshape_simple_mouse.gltf"
                     camera-controls
                     auto-rotate
                     shadow-intensity="1">
@@ -263,8 +325,32 @@
                 </model-viewer>
             </div>
             <div class="model-group">
+                <h3 class="model-title">Initial Parallel Transport</h3>
+                <model-viewer src="gltfs/initial_parallel_transport/onshape_simple_shape.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Initial Estimate</h3>
+                <model-viewer src="gltfs/initial_estimate/onshape_simple_shape.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
                 <h3 class="model-title">Opt Normals</h3>
                 <model-viewer src="gltfs/opt_normals/onshape_simple_shape.gltf"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1">
+                </model-viewer>
+            </div>
+            <div class="model-group">
+                <h3 class="model-title">Opt Small Data Term</h3>
+                <model-viewer src="gltfs/opt_small_data_term/onshape_simple_shape.gltf"
                     camera-controls
                     auto-rotate
                     shadow-intensity="1">
